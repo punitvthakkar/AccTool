@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intuitive Financial Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Financial Formulas</h1>
+            <div id="formula-search-container">
+                <input type="text" id="formula-search" placeholder="Search formulas...">
+            </div>
+            <nav id="formula-list-nav">
+                <!-- Formula categories and links will be populated by JS -->
+            </nav>
+        </aside>
+        <main class="calculator-main">
+            <header class="calculator-header">
+                <h2 id="formula-title">Select a Formula</h2>
+                <p id="formula-description"></p> <!-- For the full formula string -->
+            </header>
+            <form id="calculator-form">
+                <!-- Input fields will be dynamically generated here -->
+            </form>
+            <div id="result-area">
+                <!-- Calculated result will be displayed here -->
+            </div>
+            <div class="actions-area">
+                <button id="clear-button" type="button">Clear Fields</button>
+            </div>
+            <div id="error-message-area" class="error-message" role="alert">
+                <!-- Error messages will be displayed here -->
+            </div>
+             <div id="formula-22-output" class="formula-22-output-area" style="display:none;">
+                <!-- Special output for Formula 22 -->
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
